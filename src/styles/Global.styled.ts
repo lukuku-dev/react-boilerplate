@@ -6,7 +6,7 @@ import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 18px
 }
 
@@ -14,11 +14,10 @@ body{
 /* Color and font weight Variables */
 :root{
   --primary-Color: #05B6EE;
+}
 
-  --fntWgtRegular: 400,
-  --fntWgtMedium: 500,
-  --fntWgtSBold: 600,
-  --fntWgtBold: 700,
+*{
+    box-sizing: border-box;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
