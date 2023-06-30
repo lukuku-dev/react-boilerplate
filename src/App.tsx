@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import TopInformation from "./components/page/home/TopInformation";
 
 function App() {
-  return <AppWrapper>Hello</AppWrapper>;
+  return (
+    <AppWrapper>
+      <TopInformation />
+    </AppWrapper>
+  );
 }
 
 export default App;
