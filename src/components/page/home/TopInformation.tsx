@@ -13,6 +13,7 @@ function TopInformation() {
         <li>React - Vite</li>
         <li>Typescript - SWC</li>
         <li>Styled-components</li>
+        <li>react-router (v6)</li>
         <li>Jotai</li>
         <li>react-query</li>
       </ul>
@@ -50,5 +51,6 @@ const InfoBox = styled.div`
     font-size: 14px;
     padding: 4px;
     text-align: center;
+    color: #888;
   }
 `;
