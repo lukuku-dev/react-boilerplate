@@ -18,7 +18,7 @@ const decreaseLove = atom(null, (get, set) => {
 });
 
 // Reset Love
-const resetLove = atom(null, (get, set) => {
+const resetLove = atom(null, (_get, set) => {
   set(loveAtom, initialLove);
 });
 
