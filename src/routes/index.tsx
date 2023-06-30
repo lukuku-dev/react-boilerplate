@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App";
+import Jotai from "../components/page/Jotai";
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
   },
   {
     path: "jotai-sample",
-    element: <>jotai</>,
+    element: <Jotai />,
   },
   {
     path: "jotai-query",
