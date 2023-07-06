@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import App from "../App";
-import Jotai from "../components/page/Jotai";
-import Query from "../components/page/Query";
+import App from "App";
+import Jotai from "components/page/Jotai";
+import Query from "components/page/Query";
 
 const router = createBrowserRouter([
   {

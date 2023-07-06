@@ -1,6 +1,7 @@
 import { default as react } from "@vitejs/plugin-react";
 import { default as reactSWC } from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -21,6 +22,7 @@ export default defineConfig(({ command }) => {
             ],
           },
         }),
+        tsconfigPaths(),
       ],
     };
   } else {
