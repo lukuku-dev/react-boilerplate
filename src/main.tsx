@@ -9,7 +9,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 // Create a client
 const queryClient = new QueryClient();
 
-import router from "./routes/index.tsx";
+import router from "./routes.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
