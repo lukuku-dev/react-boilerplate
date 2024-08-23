@@ -1,4 +1,4 @@
-import { atomsWithQuery } from "jotai-tanstack-query";
+import { atomWithQuery } from "jotai-tanstack-query";
 import { getDummyDataApi } from "apis/sample";
 
 export interface InterfaceTodo {
@@ -8,7 +8,7 @@ export interface InterfaceTodo {
   completed: boolean;
 }
 
-export const [todoAtom] = atomsWithQuery(() => ({
+export const todoAtom = atomWithQuery(() => ({
   queryKey: ["todo"],
   queryFn: async () => {
     const res = await getDummyDataApi();

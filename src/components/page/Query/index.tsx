@@ -4,7 +4,9 @@ import { InterfaceTodo, todoAtom } from "atom/todos.atom";
 import styled from "styled-components";
 
 function QueryPage() {
-  const [todo] = useAtom(todoAtom);
+  const [{ data, isPending }] = useAtom(todoAtom);
+
+  if (isPending) return null;
 
   return (
     <PageContainer>
@@ -14,7 +16,7 @@ function QueryPage() {
           `https://jsonplaceholder.typicode.com/todos/`
         </h2>
         <ul>
-          {todo.slice(0, 10).map((d: InterfaceTodo) => (
+          {data.slice(0, 10).map((d: InterfaceTodo) => (
             <li key={d.id}>{d.title}</li>
           ))}
         </ul>
