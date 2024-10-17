@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import TopInformation from "./components/page/home/TopInformation";
 import LowerMenu from "./components/page/home/LowerMenu";
+import TopInformation from "./components/page/home/TopInformation";
 
 function App() {
   return (

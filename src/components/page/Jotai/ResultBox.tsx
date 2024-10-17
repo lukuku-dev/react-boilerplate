@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { useAtom } from "jotai";
 import { loveAtom } from "atom/love.atom";
+import { useAtom } from "jotai";
+import styled from "styled-components";
 
 function ResultBox() {
   const [love] = useAtom(loveAtom);

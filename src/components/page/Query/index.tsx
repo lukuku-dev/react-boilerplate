@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
-import { useAtom } from "jotai";
 import { InterfaceTodo, todoAtom } from "atom/todos.atom";
+import { useAtom } from "jotai";
 import styled from "styled-components";
 
 function QueryPage() {

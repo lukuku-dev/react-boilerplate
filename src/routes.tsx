@@ -29,5 +29,5 @@ const router = createBrowserRouter([
   },
 ]);
 
-export { BASE_PATH, JOTAI_SAMPLE_PATH, JOTAI_QUERY_SAMPLE_PATH };
+export { BASE_PATH, JOTAI_QUERY_SAMPLE_PATH, JOTAI_SAMPLE_PATH };
 export default router;

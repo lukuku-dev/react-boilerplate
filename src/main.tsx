@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Global from "./styles/Global.styled.ts";
 import { RouterProvider } from "react-router-dom";
+import Global from "./styles/Global.styled.ts";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";

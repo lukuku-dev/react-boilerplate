@@ -1,5 +1,5 @@
-import { atomWithQuery } from "jotai-tanstack-query";
 import { getDummyDataApi } from "apis/sample";
+import { atomWithQuery } from "jotai-tanstack-query";
 
 export interface InterfaceTodo {
   id: number;

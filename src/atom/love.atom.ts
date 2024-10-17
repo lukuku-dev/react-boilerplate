@@ -22,4 +22,4 @@ const resetLove = atom(null, (_get, set) => {
   set(loveAtom, initialLove);
 });
 
-export { loveAtom, checkLove, increaseLove, decreaseLove, resetLove };
+export { checkLove, decreaseLove, increaseLove, loveAtom, resetLove };

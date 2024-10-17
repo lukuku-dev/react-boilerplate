@@ -1,13 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
-import styled from "styled-components";
-import ResultBox from "./ResultBox";
 import { useAtom } from "jotai";
+import styled from "styled-components";
 import {
   checkLove,
-  increaseLove,
   decreaseLove,
+  increaseLove,
   resetLove,
 } from "../../../atom/love.atom";
+import ResultBox from "./ResultBox";
 
 function JotaiHome() {
   const [love] = useAtom(checkLove);
