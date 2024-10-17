@@ -23,5 +23,7 @@
     "^@/app/(.*)$",
     "",
     "^[./]"
-  ]
+  ],
+  "plugins": ["prettier-plugin-organize-imports"],
+  "organizeImports": true
 }
