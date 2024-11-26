@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "husky install",
+    "prepare": "husky",
     "format": "prettier .",
     "format:fix": "yarn format --write",
     "dev": "vite",
@@ -52,7 +52,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
