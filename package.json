@@ -6,7 +6,7 @@
     "prepare": "husky",
     "format": "prettier .",
     "format:fix": "yarn format --write",
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -47,6 +47,7 @@
     "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
     "prettier-plugin-organize-imports": "^4.1.0",
+    "react-scan": "^0.0.46",
     "typescript": "^5.7.2",
     "vite": "^6.0.3"
   },
