@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import packageJson from "../../../../package.json";
 
 function TopInformation() {
   return (
@@ -10,12 +11,16 @@ function TopInformation() {
 
       <h2>Ingredients</h2>
       <ul>
-        <li>React - Vite</li>
-        <li>Typescript - SWC</li>
-        <li>Styled-components</li>
-        <li>react-router (v6)</li>
-        <li>Jotai</li>
-        <li>react-query</li>
+        {Object.keys(packageJson.dependencies).map((key) => (
+          <li key={key}>
+            {key}{" "}
+            {
+              packageJson.dependencies[
+                key as keyof typeof packageJson.dependencies
+              ]
+            }
+          </li>
+        ))}
       </ul>
     </InfoBox>
   );
